@@ -21,11 +21,13 @@
   behaviors {
     comma_semi: comma_semi {
       compatible = "zmk,behavior-mod-morph";
+      #binding-cells = <0>;
       bindings = <&kp COMMA>, <&kp SEMICOLON>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
     };
     dot_exclaim: dot_exclaim {
       compatible = "zmk,behavior-mod-morph";
+      #binding-cells = <0>;
       bindings = <&kp DOT>, <&kp EXCLAMATION>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
     };
